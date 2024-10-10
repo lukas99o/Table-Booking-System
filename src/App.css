@@ -1,0 +1,38 @@
+#container {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column; 
+  width: 50vw;
+  padding: 25px;
+  text-align: center;
+}  
+
+#container h1 {
+  margin-bottom: 10px;
+}
+
+#container h2 {
+  margin-bottom: 25px;
+}
+
+#container2 {                        
+}
+
+#container3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#container3 input {
+  width: 25%;
+  align-self: center;
+}
+
+.table {
+  background-color: lightgray;
+  padding: 10px;
+  border: 1px solid black;
+  flex: 1 1 150px;  
+  text-align: center;
+  border-radius: 5px;
+}
