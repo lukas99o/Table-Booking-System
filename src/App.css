@@ -1,5 +1,5 @@
 #container {
-  margin-top: 250px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column; 
   width: 50vw;
@@ -15,24 +15,112 @@
   margin-bottom: 25px;
 }
 
-#container2 {                        
+#tables-container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-#container3 {
+#tables-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-right {
+  text-align: right;
+}
+
+#choosetable-container {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-#container3 input {
-  width: 25%;
+#choosetable-container h3 {
+  margin-bottom: 5px;
+}
+
+#choosetable-input, #amountofpeople, #customerid {
+  width: 50px;
+}
+
+#date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#date-container input {
+  width: 200px;
+}
+
+#date-container-h3 {
+  margin-bottom: 10px;
+}
+
+#submit-button {
+  width: fit-content;
   align-self: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255)
 }
 
-.table {
-  background-color: lightgray;
-  padding: 10px;
-  border: 1px solid black;
-  flex: 1 1 150px;  
-  text-align: center;
-  border-radius: 5px;
+#submit-button:hover {
+  background-color: rgb(235, 235, 235)
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 95vw;
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  #container h2 {
+    width: 95vw;
+  }
+
+  #tables-container {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .table-right, .table-left {
+    text-align: center;
+  }
+
+  #choosetable-container h3 {
+    margin-bottom: 10px;
+  }
+
+  #choosetable-input, #customerid {
+    margin-bottom: 10px;
+  }
+
+  #date-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #date-container input {
+    width: 200px;
+  }
+
+  body {
+    padding-bottom: 25px;
+  }
+
+
 }
